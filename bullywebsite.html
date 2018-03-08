@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <link rel="stylesheet" href="bullywebsite.css">
+
+  <title>Bullying Now</title>
+</head>
+<div class="background">
+</div>
+<body class="everything">
+
+  <main role="main">
+    <div class="container">
+
+<!--      Game Start here -->
+      <div id="game-start" class="row">
+        <div class="col">
+          <div class="title">B U L L Y I N G W E B S I T E </div>
+<br>
+		<div class="words">
+			<h1 id="stat">Statistic about bullying: There are many senerios where students and people don't know that they are being bullied. People commonly only associate the word bullying with high school, unmature teenagers although this is incorrect. People of all ages are able to get bullied including adults in a work setting or even family members can bully you.</h1>
+		</div>
+<hr/>
+          <p class="context" id="bottom"> One day when you, Timmy was on the internet, working on your research paper, your friends, Carl and Joey sent you a picture that was shared on instagram. The picture was of you and had a series of insults directed at you.</p>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+            	<button class="btn btn-primary button startButton" onclick="startGame()" id="continue"> Continue </button>
+            </div>
+          </div>
+       </div>
+       </div>
+
+<!-- end gamestart -->
+
+<!--      Online -->
+      <div id="online" class="row"  hidden >
+        <div class="col">
+          <div class="title">O N L I N E </div>
+<br>
+		<div class="words">
+			<h1 id="onlineq1">Once you see the picture, do you want to report it, ignore it, or take it as a joke and laugh?</h1>
+		</div>
+<hr/>
+          <div class="row">
+				<div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+				<button class="btn btn-primary button startButton" onclick="clickFunction('reportonlineOption')"> REPORT </button>
+				<button class="btn btn-primary button startButton" onclick="clickFunction('ignoreonlineOption')"> IGNORE </button>
+				<button class="btn btn-primary button startButton" onclick="clickFunction('respondonlineOption')"> RESPOND </button>
+            </div>
+          </div>
+       </div>
+       </div>
+<!--      End Online -->
+
+<!--      Report -->
+      <div id="reportonline" class="row"  hidden>
+        <div class="col">
+          <div class="title">R E P O R T </div>
+<br>
+		<div class="words">
+			<h1 id="stat">The school talks to the bully and suspends them. After a while the bully returns and starts to bully you again. Do you want to try and report them again or physically fight back?</h1>
+		</div>
+<hr/>
+          <div class="row">
+				<div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+				<button class="btn btn-primary button startButton" onclick="clickFunction('reportagainonlineOption')"> REPORT AGAIN</button>
+				<button class="btn btn-primary button startButton" onclick="clickFunction('fightbackonlineOption')"> FIGHT BACK </button>
+            </div>
+          </div>
+       </div>
+       </div>
+<!--      End online -->
+<!--      ignore- BEGINNING HALLWAY -->
+      <div id="ignoreonline" class="row"  hidden>
+        <div class="col">
+          <div class="title">I G N O R E </div>
+<br>
+		<div class="words">
+			<h1 id="stat">
+				After you decided to Ignore the post made about you, you went to school. While your in the hallway, people constantly started laughing at you. Do you ask them why, tell the administration, or walkaway?
+</h1>
+		</div>
+<hr/>
+          <div class="row">
+				<div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+				<button class="btn btn-primary button startButton" onclick="clickFunction('hallwayOption')"> ASK</button>
+				<button class="btn btn-primary button startButton" onclick="clickFunction('hallwayOption')"> TELL </button>
+				<button class="btn btn-primary button startButton" onclick="clickFunction('hallwayOption')"> WALK AWAY</button>
+            </div>
+          </div>
+       </div>
+       </div>
+<!--      End ignore-Beginning -->
+<!--      respond- BEGINNING HALLWAY -->
+      <div id="respondonline" class="row"  hidden >
+        <div class="col">
+          <div class="title">R E S P O N D </div>
+<br>
+		<div class="words">
+			<h1 id="stat">
+				Because you responded to the post, the administration found who you are and you were suspended from school because administration classified what you said as pure retaliation and not self defense. If you wish to continue and change your ending pick a different route starting from your first decision.
+		</div>
+<hr/>
+        <div class="row">
+				<div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+				<button class="btn btn-primary button startButton" onclick="clickFunction('toignoreOption')"> GO TO IGNORE ROUTE</button>
+				<button class="btn btn-primary button startButton" onclick="clickFunction('toreportOption')"> GO TO REPORT ROUTE</button>
+        
+            </div>
+          </div>
+       </div>
+       </div>
+<!--      End respond -->
+<!--      report again- BEGINNING HALLWAY -->
+      <div id="reportagainhallway" class="row"  hidden >
+        <div class="col">
+          <div class="title">R E P O R T  A G A I N </div>
+<br>
+    <div class="words">
+      <h1 id="stat">
+        Although this is the second time you reported the bully, the problem didn’t stop. In result, you were left with no choice but to stay there and tolerate the bullying or switch schools. You decided to switch schools and at your new school you still got bullied for being an outsider but you made it to graduation. 
+</h1>
+    </div>
+<hr/>
+         <div class="row">
+        <div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+        <button class="btn btn-primary button startButton" onclick="clickFunction('toignoreOption')"> GO TO IGNORE ROUTE</button>
+        <button class="btn btn-primary button startButton" onclick="clickFunction('torespondOption')"> GO TO RESPOND ROUTE</button>
+      </div>
+    </div>
+<!--      End ignore-Beginning -->
+<!--      fight back- BEGINNING HALLWAY -->
+      <div id="fightbackhallway" class="row"  hidden>
+        <div class="col">
+          <div class="title">F I G H T B A C K </div>
+<br>
+    <div class="words">
+      <h1 id="stat">
+        Because you decided to fight back, the administration didn’t care to hear your side of the story. Instead they suspended you from school which later went on your permanent record. If you wish to continue and change your ending pick a different route starting from your first decision.
+</h1>
+    </div>
+<hr/>
+         <div class="row">
+        <div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+        <button class="btn btn-primary button startButton" onclick="clickFunction('toignoreOption')"> GO TO REPORT AGAIN ROUTE</button>
+        <button class="btn btn-primary button startButton" onclick="clickFunction('toignoreOption')"> GO TO IGNORE ROUTE</button>
+        <button class="btn btn-primary button startButton" onclick="clickFunction('torespondOption')"> GO TO RESPOND ROUTE</button>
+        
+      </div>
+    </div>
+<!--      End ignore-Beginning -->
+<!--      ask- BEGINNING HALLWAY -->
+      <div id="askhallway" class="row" hidden >
+        <div class="col">
+          <div class="title">A S K </div>
+<br>
+    <div class="words">
+      <h1 id="stat">
+        As you walk away, you tell the teacher about what they said about you. The teacher talked to them and they confessed to everything they said. They were punished and although you didn’t end up becoming friends with them (a good thing really), they never bothered you again.
+        <!-- ADD MORE TO THE STORY -->
+</h1>
+    </div>
+<hr/>
+        <div class="row">
+        <div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+        <button class="btn btn-primary button startButton" onclick="clickFunction('totellOption')"> GO TO TELL ROUTE</button>
+        <button class="btn btn-primary button startButton" onclick="clickFunction('towalkawayOption')"> GO TO WALK AWAY ROUTE</button>
+        <button class="btn btn-primary button startButton" onclick="clickFunction('torespondOption')"> GO TO RESPOND ROUTE</button>
+
+      </div>
+    </div>
+<!--      End ask-Beginning -->
+<!--      begin tell-hallway -->
+      <div id="tellhallway" class="row" hidden>
+        <div class="col">
+          <div class="title">T E L L </div>
+<br>
+    <div class="words">
+      <h1 id="stat">
+        You told the principle that some kids were laughing at you and the principle said that you were over reacting and you should get over it.
+      </h1>
+    </div>
+<hr/>
+    <p class="context" id="bottom"> 
+      A witnesses volunteered to help  you explain what happened. In the end, the principle finally took action and got the bully suspended. 
+    </p>
+    <div class="row">
+    <div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+      <button class="btn btn-primary button startButton" onclick="clickFunction('toaskOption')"> GO TO ASK ROUTE</button>
+      <button class="btn btn-primary button startButton" onclick="clickFunction('towalkawayOption')"> GO TO WALK AWAY ROUTE</button>
+      <button class="btn btn-primary button startButton" onclick="clickFunction('torespondOption')"> GO TO RESPOND ROUTE</button>
+
+        </div>
+         </div>
+       </div>
+       </div>
+
+<!-- end tell- hallway -->
+<!--      begin walk away hallway -->
+      <div id="walkawayhallway" class="row" hidden>
+        <div class="col">
+          <div class="title">W A L K  A W A Y </div>
+<br>
+    <div class="words">
+      <h1 id="stat">
+        You avoided the problem for now, but as you walk away you can tell that this is not going to stop.
+      </h1>
+    </div>
+<hr/>
+    <div class="row">
+    <div class="col-12 d-flex justify-content-end justify-content-md-center input-group-append">
+      <button class="btn btn-primary button startButton" onclick="clickFunction('toaskOption')"> GO TO ASK ROUTE</button>
+      <button class="btn btn-primary button startButton" onclick="clickFunction('totellOption')"> GO TO TELL ROUTE</button>
+      <button class="btn btn-primary button startButton" onclick="clickFunction('torespondOption')"> GO TO RESPOND ROUTE</button>
+
+        </div>
+         </div>
+       </div>
+       </div>
+
+<!-- end walk away hallway -->
+   
+    </div>
+
+  </main>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="error-msg-box" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLongTitle">ERROR BOX</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div id="error-msg" class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/popper.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="bullywebsite.js"></script>
+
+</body>
+
+</html>
