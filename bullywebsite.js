@@ -17,20 +17,18 @@ function ignoreonlineFunction(){
   document.getElementById('online').hidden = true;
   document.getElementById('reportonline').hidden = true;
   document.getElementById('ignoreonline').hidden = false;
-  document.body.style.backgroundImage = "url('S1_ignore.jpeg')";
+  document.body.style.backgroundImage = "url('S1_ignore.png')";
 }
 function respondonlineFunction(){
   document.getElementById('online').hidden = true;
   document.getElementById('respondonline').hidden = false;
-  document.body.style.backgroundImage = "url('respondscen1.jpg')";
+  document.body.style.backgroundImage = "url('respondscen1.png')";
 }
-function reportagainFunction(){
+function reportagainFunction() {
   document.getElementById('online').hidden = true;
   document.getElementById('reportonline').hidden = true;
   document.getElementById('reportagain').hidden = false;
-  document.getElementById('fight').hidden = true;
-   document.body.style.backgroundImage = "url('bully1.png')";
-
+ document.body.style.backgroundImage = "url('newschool.png')";
 }
 function gotoignoreFunction(){
   document.getElementById('online').hidden = true;
@@ -38,7 +36,7 @@ function gotoignoreFunction(){
   document.getElementById('reportagain').hidden = true;
   document.getElementById('ignoreonline').hidden = false;
   document.getElementById('gotorespond').hidden = true;
-   document.body.style.backgroundImage = "url('bully1.png')";
+   document.body.style.backgroundImage = "url('S1_ignore.png')";
 
 }
  function fightbackonlineFunction(){
@@ -46,14 +44,14 @@ function gotoignoreFunction(){
   document.getElementById('reportagain').hidden = true;
   document.getElementById('fightbackonline').hidden = false;
   document.getElementById('reportonline').hidden = true;
-   document.body.style.backgroundImage = "url('bully1.png')";
+   document.body.style.backgroundImage = "url('fightcartoon.png')";
  }
 function askhallwayFunction(){
   document.getElementById('online').hidden = true;
   document.getElementById('askhallway').hidden = false;
   document.getElementById('ignoreonline').hidden = true;
   document.getElementById('reportagain').hidden = true;
-   document.body.style.backgroundImage = "url('bully1.png')";
+   document.body.style.backgroundImage = "url('questions.png')";
 }
 function gotorespondonlineFunction(){
   document.getElementById('online').hidden = true;
@@ -66,6 +64,7 @@ function tellhallwayFunction(){
   document.getElementById('tellhallway').hidden = false;
   document.getElementById('askhallway').hidden = true;
   document.getElementById('ignoreonline').hidden = true;
+  document.body.style.backgroundImage = "url('pricipaloffice.png')";
 }
 function walkawayhallwayFunction(){
   document.getElementById('online').hidden = true;
@@ -73,6 +72,18 @@ function walkawayhallwayFunction(){
   document.getElementById('askhallway').hidden = true;
   document.getElementById('ignoreonline').hidden = true;
   document.getElementById('walkawayhallway').hidden = false;
+  document.body.style.backgroundImage = "url('walkaway.png')";
+}
+function referencepageFunction(){
+  document.getElementById('online').hidden = true;
+  document.getElementById('askhallway').hidden = true;
+  document.getElementById('walkawayhallway').hidden = true;
+  document.getElementById('respondonline').hidden = true;
+  document.getElementById('reportagain').hidden = true;
+  document.getElementById('tellhallway').hidden = true;
+  document.getElementById('fightbackonline').hidden = true;
+  document.getElementById('referencepage').hidden = false;
+  document.body.style.backgroundImage = "url('nobullying.png')";
 }
 
 
@@ -97,6 +108,8 @@ function clickFunction(id) {
   	tellhallwayFunction();
   } else if (id == 'walkawayhallwayOption') {
   	walkawayhallwayFunction();
+  } else if (id == 'referencepageOption') {
+    referencepageFunction();
   }
 }
 
