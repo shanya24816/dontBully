@@ -28,7 +28,7 @@ function reportagainFunction() {
   document.getElementById('online').hidden = true;
   document.getElementById('reportonline').hidden = true;
   document.getElementById('reportagain').hidden = false;
- document.body.style.backgroundImage = "url('newschool.png')";
+ document.body.style.backgroundImage = "url('prince.png')";
 }
 function gotoignoreFunction(){
   document.getElementById('online').hidden = true;
@@ -83,9 +83,13 @@ function referencepageFunction(){
   document.getElementById('tellhallway').hidden = true;
   document.getElementById('fightbackonline').hidden = true;
   document.getElementById('referencepage').hidden = false;
-  document.body.style.backgroundImage = "url('nobullying.png')";
+  document.body.style.backgroundImage = "url('trees.png')";
 }
-
+function restartnowFunction(){
+  document.getElementById('online').hidden = false;
+  document.getElementById('referencepage').hidden = true;
+  document.body.style.backgroundImage = "url('schoolpicture.png')";
+}
 
 function clickFunction(id) {
   if (id == 'reportonlineOption') {
@@ -110,6 +114,8 @@ function clickFunction(id) {
   	walkawayhallwayFunction();
   } else if (id == 'referencepageOption') {
     referencepageFunction();
+  } else if (id == 'restartnowOption') {
+    restartnowFunction();
   }
 }
 

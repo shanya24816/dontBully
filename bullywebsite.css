@@ -16,21 +16,13 @@ h1 {
 }*/
 
 body {
-	/*position: fixed;
-	height: 100%;
-	width: 100%;
-*/
+	font-family: "Times New Roman", Times, serif;
 	background-image:
-           url("bully1.png");
+           url("schoolpicture.png");
            background-size: cover;
            background-position: center;
            background-repeat: no-repeat;
            height: 100vh;
-
-	/*background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	 */
 
 }
 
@@ -87,4 +79,10 @@ hr {
 .stat {
 	font-size: 25px;
 	
+}
+.list {
+	text-align: center;
+}
+#restartnow {
+	margin-top: 20px;
 }
